@@ -1,0 +1,100 @@
+body{
+	background-color: #FFFFFF;
+	margin: 0;
+	padding: 0;
+	font-family: 'Quicksand', sans-serif;
+}
+
+#content {
+	margin: auto;
+	width: 950px;
+	height: auto;
+}
+
+#header {
+	float: left;
+	padding: 30px 0px 35px 40px;
+	width: 910px;
+	height: 72px;
+	border-bottom: 5px solid #ffcb5b;
+}
+
+#header #identite {
+	float: left;
+	width: 350px;
+	height: 72px;
+	text-transform: uppercase;
+}
+
+#header #identite #logo {
+	float: left;
+	width: 71px;
+	height: 71px;
+	border-radius: 50%;
+}
+
+#header #identite h1{
+	float: left;
+	margin: 10px 0px 0px 25px;
+	color: #ffcb5b;
+	font-size: 32px;
+}
+
+#header #identite h2{
+	float: left;
+	margin: 0px 0px 0px 50px;
+	color: #ababab;
+	font-size: 18px;
+	font-weight: 100;
+}
+
+#header ul{
+	float: right;
+	margin-top: 10px;
+	list-style: none; 
+}
+
+#header ul li{
+	float: left;
+	padding: 15px 15px 22px 15px;
+	width: 96px;
+	height: 31px;
+	border-left: 1px solid #ababab;
+	color: #ababab;
+	font-size: 12px;
+}
+
+#header ul li a{
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: bold; 
+	display: block;
+	text-decoration: none;
+	color: #6a6969;
+}
+
+#header ul li a:hover{
+	color: #A77208;
+}
+
+
+.slides {
+	float: left;
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+}
+
+.urbex {
+	width: 640px; 
+}
+.img{
+	float: left;
+	width: 90px;
+	height: auto;
+	border-radius: 50%;
+}
+
+#Contentpage1 {
+	margin: 50px 50px 50px 50px;
+}
