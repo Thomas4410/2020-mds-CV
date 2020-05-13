@@ -1,0 +1,245 @@
+/*STYLES GENERAUX*/
+*{
+    font-family: Quicksand;
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+body{
+    background: #606060;
+}
+p{
+    font-size: 1em;
+    line-height: 1.5em;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/*HEADER & FOOTER*/
+header, footer{
+    width: 100%;
+    padding: 40px 0px;
+    background-color: #eea551;
+    box-shadow: 0px 0px 0px #333;
+}
+header{
+    border-bottom: 0px solid #fff;
+    height: 120px;
+}
+header h1{
+    color: white;
+    font-size: 1.5em;
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer{
+    border-top: 0px solid #fff;
+}
+footer p{
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+footer a{
+    color: #fff;
+}
+
+/*SECTIONS*/
+section{
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px #bbb;
+    background-color: #ffffff;
+}
+
+section h2{
+    margin: 20px 0;
+    width: 90%;
+    color: #606060;
+}
+section > div{
+    width: 90%;
+}
+
+/*SECTION INFOS*/
+.portrait{
+    text-align: right;
+}
+.portrait img{
+    width: 150px;
+    height: 158px;
+    border: 5px solid #606060;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px #777;
+    border-radius: 50%;
+    margin-top: -100px;
+}
+.presentation{
+    border-bottom: 2px dashed #ccc;
+    color: #606060;
+}
+.presentation a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto 30px auto;
+    color: #606060;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 5px;
+}
+.contact{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    color: #606060;
+}
+.contact a{
+    color: #606060;
+}
+
+.reseaux-sociaux1{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 20px;
+}
+
+.reseaux-sociaux2{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 20px;
+}
+
+.reseaux-sociaux1 img{
+    width: 40px;
+    height: 40px;
+}
+
+.reseaux-sociaux2 img{
+    width: 40px;
+    height: 40px;
+}
+
+/*SECTION EXP ET FORMATION*/
+.experiences{
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    color: #606060;
+}
+.infos-experiences{
+    display: flex;
+    flex-flow: column wrap;
+    color: #606060;
+}
+.logo-experiences{
+    flex: 0 0 25%;
+    max-width: 100px;
+}
+.infos-experiences{
+    flex: 0 0 70%;
+    margin-left: auto;
+    color: #606060;
+}
+.experiences img{
+    width: 100%;
+}
+.experiences h3{
+    font-size:  1.2em;
+}
+.experiences h4{
+    font-size:  1em;
+    font-weight: normal;
+}
+
+
+.descriptions-experiences{
+    text-align: center;
+    margin: 0px 0px 0px 205px;
+}
+
+
+/*SECTION COMPETENCES*/
+
+.competences{
+    display:flex;
+    flex-flow: row wrap;
+    margin-bottom: 10px;
+}
+.competences p{
+    flex: 0 0 40%;
+    color: #606060;
+}
+.barre-progression1{
+    flex: 0 0 50%;
+    border-radius: 5px;
+    background-color: #606060;
+    border-bottom: 1px grey;
+}
+.barre-progression2{
+    flex: 0 0 35%;
+    border-radius: 5px;
+    background-color: #606060;
+    border-bottom: 1px grey;
+}
+.barre-progression3{
+    flex: 0 0 60%;
+    border-radius: 5px;
+    background-color: #606060;
+    border-bottom: 1px grey;
+}
+
+/*VERSION BUREAU DU CV*/
+@media screen and (min-width: 980px){
+    section{
+        width: 80%;
+        box-shadow: 0px 0px 10px #bbb;
+    }
+    a:hover{
+        color: #eea551;
+    }
+    header h1{
+        width: 80%;
+    }
+    .presentation, .contact{
+        flex: 0 0 45%;
+    }
+    .presentation{
+        border-bottom: none;
+        border-right: 2px solid #ccc;
+        padding-right: 20px;
+        margin-left: auto;
+    }
+    .contact{
+        padding-left: 20px;
+        margin-right: auto;
+    }
+    .presentation a{
+        border: 2px solid transparent;
+    }
+    .presentation a:hover{
+        color: #606060;
+        background-color: #fff;
+        border: 2px solid #f28835;
+        box-shadow: 0px 0px 20px #666;
+    }
+    .logo-experiences{
+        flex: 0 0 10%;
+    }
+    .infos-experiences, .description-experiences{
+        flex: 0 0 85%;
+        margin-left: auto;
+    }
+   
+}
